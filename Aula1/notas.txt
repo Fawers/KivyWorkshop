@@ -14,3 +14,11 @@ Kivy Machines (?)
 · Buildozer
 · PyJnius
 · PyLayer
+· KivyDesigner
+
+Exemplo de KV:
+    BoxLayout:
+        Button:
+            Text:"Ola Zep"
+        Button:
+            Text:"Tchau Zep"
