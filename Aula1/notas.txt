@@ -1,0 +1,10 @@
+· Kivy usa Cython
+· Kivy usa OpenGL
+· Kivy é baseado em widgets
+    · Em Kivy, tudo é widget; o que não é widget, é python puro
+· Kivy tem uma linguagem própria de programação Kivy pode ser comercializado
+    · Uma parte de Kivy é GPL
+
+
+ANDROID
+    · Kivy showcase
