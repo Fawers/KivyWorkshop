@@ -8,3 +8,9 @@
 
 ANDROID
     · Kivy showcase
+
+Kivy Machines (?)
+· Garden
+· Buildozer
+· PyJnius
+· PyLayer
