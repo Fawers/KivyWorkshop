@@ -16,9 +16,14 @@ Kivy Machines (?)
 · PyLayer
 · KivyDesigner
 
-Exemplo de KV:
-    BoxLayout:
-        Button:
-            Text:"Ola Zep"
-        Button:
-            Text:"Tchau Zep"
+Widgets comuns:
+· Button
+· Label
+· TextInput
+
+Layouts comuns:
+· BoxLayout
+    · Não faz scroll para baixo
+    · Coloca tudo (!) que você quiser na tela
+    · Calcula os tamanhos dos widgets automaticamente
+· GridLayout
