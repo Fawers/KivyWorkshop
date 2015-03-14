@@ -1,0 +1,6 @@
+Arquivos necessários:
+main.py → programa principal
+*.atlas, *.kv, *.buildozer → layout managers
+buildozer só funciona em Unix
+
+main.py e *.atlas são essenciais; os outros dois são opcionais
