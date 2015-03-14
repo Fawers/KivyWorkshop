@@ -1,0 +1,17 @@
+BoxLayout:
+    orientation: 'vertical'
+    Slider:
+        max: 100
+        min: 0
+    Label:
+        text: "texto"
+        font_size: 40
+    Button:
+        text: "texto2"
+        callback: lambda: app.increase(pb)
+    ProgressBar:
+        id: pb
+        max: 100
+        min: 0
+    Image:
+        source: "/home/fawers/Downloads/1660592_1389533941311879_279942079_n.jpg"

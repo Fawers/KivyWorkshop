@@ -7,7 +7,8 @@ from kivy.app import App
 from kivy.uix.button import Button
 
 class primeiroApp(App):
-    def build(self):
-        return Button(text="Sou um botão")
-
+    def increase(self, pb):
+        print pb
+        print dir(pb)
+        
 primeiroApp().run()
