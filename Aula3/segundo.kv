@@ -1,0 +1,25 @@
+MeuWidget:
+    orientation: 'vertical'
+    BoxLayout:
+        Button:
+            id: bta0
+            text: '+0'
+            on_press: root.apply(self.text)
+
+        Button:
+            id: bta1
+            text: '+1'
+            on_press: root.apply(self.text)
+
+    Button:
+        id: bts
+        text: '-'
+        on_press: root.apply(self.text)
+
+
+    TextInput:
+        id: tx_bin
+
+    TextInput:
+        id: tx_dec
+
