@@ -1,4 +1,4 @@
-<SplashScreen>:
+<Root>:
     BoxLayout:
         orientation: 'vertical'
         Label:
@@ -17,10 +17,8 @@
                 on_press: exit()
             Button:
                 text: 'Gerar Ipsums'
-                on_press: root.goto_screen(1)
+                on_press: root.load_next()
 
-
-<MainScreen>:
     BoxLayout:
         orientation: 'vertical'
         AsyncImage:
@@ -58,17 +56,17 @@
         Button:
             text: 'Voltar'
             size_hint_y: 0.5
-            on_press: root.goto_screen(0)
+            on_press: root.load_previous()
 
-
-<TextScreen>:
     BoxLayout:
         orientation: 'vertical'
-        TextInput:
-            id: txt
-            #size_hint_y: 0.9
-            readonly: True
+        ScrollView:
+            do_scroll_x: False
+            TextInput:
+                id: target_txt
+                #size_hint_y: 0.9
+                readonly: True
         Button:
             text: 'Voltar'
             size_hint_y: 0.1
-            on_press: root.goto_screen(1)
+            on_press: root.load_previous()
