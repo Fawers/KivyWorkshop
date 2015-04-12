@@ -1,4 +1,5 @@
-<Root>:
+<Root>: # declaração do tipo Root
+Root:
     BoxLayout:
         orientation: 'vertical'
         Label:
@@ -8,8 +9,12 @@
         Label:
             text: 'Inspirado em www.dilmesipsum.com.br'
             size_hint_y: 0.1
-        Image:
-            source: 'img/pt.png'
+        BoxLayout:
+            Image:
+                source: 'img/pt.png'
+                size_hint_x: 0.5
+            Image:
+                source: 'img/dilmes.png'
         BoxLayout:
             size_hint_y: 0.2
             Button:
@@ -28,7 +33,7 @@
             text: 'Quantos parágrafos você deseja?'
             size_hint_y: 0.1
         BoxLayout:
-            size_hint_y: 0.5
+            size_hint_y: 0.325
             Button:
                 text: '1'
                 on_press: root.show_text(1)
@@ -53,20 +58,9 @@
             Button:
                 text: '8'
                 on_press: root.show_text(8)
-        Button:
-            text: 'Voltar'
-            size_hint_y: 0.5
-            on_press: root.load_previous()
 
-    BoxLayout:
-        orientation: 'vertical'
-        ScrollView:
-            do_scroll_x: False
-            TextInput:
-                id: target_txt
-                #size_hint_y: 0.9
-                readonly: True
-        Button:
-            text: 'Voltar'
-            size_hint_y: 0.1
-            on_press: root.load_previous()
+    ScrollView:
+        do_scroll_x: False
+        TextInput:
+            id: target_txt
+            readonly: True

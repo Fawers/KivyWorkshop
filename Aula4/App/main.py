@@ -25,10 +25,7 @@ class Root(Carousel):
 
 
 class DilmesApp(App):
-    def build(self):
-        self.root = Root()
-
-        return self.root
+    pass
 
 
 DilmesApp().run()
