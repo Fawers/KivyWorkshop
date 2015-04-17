@@ -1,5 +1,7 @@
 <Root>: # declaração do tipo Root
 Root:
+    scroll_timeout: 100
+    min_move: .1
     BoxLayout:
         orientation: 'vertical'
         Label:
@@ -60,7 +62,9 @@ Root:
                 on_press: root.show_text(8)
 
     ScrollView:
-        do_scroll_x: False
-        TextInput:
+        Label:
             id: target_txt
-            readonly: True
+            multiline: True
+            text_size: (self.width, None)
+            size_hint_y: None
+            height: self.texture_size[1]

@@ -1,15 +1,14 @@
 #!/usr/bin/env python2
-# -*- encoding: utf-8 -*-
 
-from __future__ import unicode_literals
 
 from random import shuffle
 
 from kivy.app import App
+from kivy.base import EventLoop
 from kivy.uix.carousel import Carousel
 
 
-__version__ = '0.2'
+__version__ = '0.3'
 
 class Root(Carousel):
     def __init__(self):
@@ -25,7 +24,16 @@ class Root(Carousel):
 
 
 class DilmesApp(App):
-    pass
+    def on_start(self):
+        EventLoop.window.bind(on_keyboard=self.hook_keyboard)
+
+    def hook_keyboard(self, window, key, *args):
+        if key == 27:
+            if self.root.previous_slide is None:
+                exit()
+            else:
+                self.root.load_previous()
+            return True
 
 
 DilmesApp().run()
