@@ -116,3 +116,7 @@ Temporary Items
 ### Buildozer ###
 bin/
 .buildozer/
+
+
+### VirtualEnv ###
+.venv/
